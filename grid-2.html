@@ -25,10 +25,10 @@
           display: grid;
           grid-column-gap: 4vw;
           grid-template-areas:
-            "header header"
-            "article sidebar"
-            "footer footer";
-          grid-template-columns: 4fr 3fr;
+            "header header header"
+            "sidebar photo article"
+            "footer footer footer";
+          grid-template-columns: 2fr 4fr 1fr;
           grid-template-rows: auto;
           margin: 1vw;
         }
@@ -53,6 +53,10 @@
         grid-area: article;
       }
 
+      img {
+        grid-area: photo;
+      }
+
       footer {
         background-color: hotpink;
         grid-area: footer;
@@ -61,6 +65,7 @@
   </head>
   <body>
     <header>Page Header</header>
+    <img src="img/neven-krcmarek-175845-unsplash-1.jpg">
     <aside>Sidebar</aside>
     <article>
       <h1>2 columns, 3 rows</h1>
