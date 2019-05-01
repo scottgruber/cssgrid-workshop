@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>2 columns, 3 rows</title>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <style type="text/css">
+      body {
+        display: grid;
+        grid-gap: 2vw;
+        grid-template-areas:
+          "header"
+          "article"
+          "sidebar"
+          "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin: 1vw;
+        color: var(--ucla-black-80);
+      }
+
+      @media (min-width: 30em) {
+        body {
+          display: grid;
+          grid-column-gap: 4vw;
+          grid-template-areas:
+            "header header"
+            "article sidebar"
+            "footer footer";
+          grid-template-columns: 4fr 3fr;
+          grid-template-rows: auto;
+          margin: 1vw;
+        }
+      }
+
+      body > * {
+        border-radius: 5px;
+        padding: 1em;
+      }
+
+      header {
+        background-color: var(--ucla-lighter-blue);
+        grid-area: header;
+      }
+
+      aside {
+        background-color: var(--ucla-gold);
+        grid-area: sidebar;
+      }
+      article {
+        background-color: var(--ucla-black-10);
+        grid-area: article;
+      }
+
+      footer {
+        background-color: hotpink;
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Page Header</header>
+    <aside>Sidebar</aside>
+    <article>
+      <h1>2 columns, 3 rows</h1>
+      <p><strong>header, article, sidebar and footer</strong></p>
+      <p>
+        This example uses line-based positioning, to position the header and
+        footer, stretching them across the grid.
+      </p>
+    </article>
+    <footer>Page Footer</footer>
+  </body>
+</html>

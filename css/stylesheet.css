@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@import "custom-properties.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+body {
+  font-family: var(--font-family);
+  margin: var(--spacing-xx-large) auto;
+  max-width: var(--min-width);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-bold);
+}
+
+.starry-night h1 {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-black);
+}
+
+h1 {
+  color: var(--ucla-darkest-blue);
+  font-size: var(--font-size-x-display);
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+h1 + p {
+  margin: var(--spacing) 0;
+}
+
+.standfirst {
+  color: var(--ucla-darkest-blue);
+  font-size: var(--font-size-xxx-large);
+}
+
+p {
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height);
+}
+
+ul,
+ol {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.float {
+  clip-path: circle(40%);
+  float: left;
+  margin-right: var(--spacing-large);
+  margin-top: -15px;
+  max-width: 250px;
+  shape-outside: circle(50%);
+}
+
+.starry-night article p:nth-of-type(2)::first-line {
+  font-feature-settings: "smp" 1;
+  font-weight: 700;
+} 
+.starry-night article p:nth-of-type(2)::first-letter {
+  font-size: 150%;
+  line-height: 1;
+} 

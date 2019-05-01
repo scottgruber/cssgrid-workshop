@@ -1,0 +1,89 @@
+/* CSS Custom Properties */
+
+@import "custom-properties.css";
+
+:root {
+  /* Typography */
+  --font-family: Helvetica, sans-serif;
+  --font-family-alt: 'Playfair Display', serif;
+  --font-family-heading: var(--font-family-alt);
+  --font-weight-thin: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+  --text-base-size: 1rem;
+  --text-scale-ratio: 1.125;
+  --line-height-text: 1.5;
+  --line-height-heading: 1.2;
+
+  /* Type scale 8:9 major second scale 1.125 */
+  --font-size-xxx-display: 4.11rem;
+  --font-size-xx-display: 3.653rem;
+  --font-size-xx-display: 3.247rem;
+  --font-size-x-display: 2.887rem;
+  --font-size-display: 2.566rem;
+  --font-size-xxxx-large: 2.281rem;
+  --font-size-xxx-large: 2.027rem;
+  --font-size-xx-large: 1.802rem;
+  --font-size-x-large: 1.602rem;
+  --font-size-large: 1.424rem;
+  --font-size-medium: 1.125rem;
+  --font-size: 1rem;
+  --font-size-small: 0.889rem;
+  --font-size-x-small: 0.79rem;
+
+
+  /* hsl color space */
+  --ucla-gold: hsl(49, 100%, 50%);
+  --ucla-blue: hsl(206, 63%, 42%);
+  --ucla-lightest-blue: hsl(212, 95%, 93%);
+  --ucla-lighter-blue: hsl(211, 67%, 73%);
+  --ucla-darker-blue: hsl(202, 100%, 26%);
+  --ucla-darkest-blue: hsl(202, 100%, 18%);
+  --ucla-darker-gold: hsl(44, 100%, 59%);
+  --ucla-darkest-gold: hsl(41, 100%, 55%);
+  --ucla-cyan: hsl(180, 100%, 50%);
+  --ucla-magenta: hsl(321, 100%, 50%);
+  --ucla-green: hsl(152, 100%, 50%);
+  --ucla-janss-steps-green: hsl(138, 55%, 43%);
+  --ucla-yellow: hsl(60, 100%, 50%);
+  --ucla-purple: hsl(259, 55%, 62%);
+
+  --ucla-black: hsl(0, 0%, 0%);
+  --ucla-black-90: hsl(0, 0%, 10%);
+  --ucla-black-80: hsl(0, 0%, 20%);
+  --ucla-black-70: hsl(0, 0%, 30%);
+  --ucla-black-60: hsl(0, 0%, 40%);
+  --ucla-black-50: hsl(0, 0%, 50%);
+  --ucla-black-40: hsl(0, 0%, 60%);
+  --ucla-black-30: hsl(0, 0%, 70%);
+  --ucla-black-20: hsl(0, 0%, 80%);
+  --ucla-black-10: hsl(0, 0%, 90%);
+  --ucla-white: hsl(0, 0%, 100%);
+
+  /* Links
+// ========================================== */
+
+  --color-text-link: var(--ucla-blue);
+  --color-text-link-active: var(--ucla-darker-blue);
+  --color-text-link-focus: var(--ucla-darker-blue);
+  --color-text-link-hover: var(--ucla-darkest-gold);
+  --color-text-link-visited: var(--ucla-purple);
+  
+
+  
+  /* Spacing
+// ========================================== */
+  --max-width: 90rem;
+  --min-width: 60rem;
+  --spacing-xx-small: 0.125rem;
+  --spacing-x-small: 0.25rem;
+  --spacing-small: 0.5rem;
+  --spacing: 0.75rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 1.5rem;
+  --spacing-x-large: 2rem;
+  --spacing-xx-large: 3rem;
+
+}

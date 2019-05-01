@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>2 columns, 3 rows</title>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <style type="text/css">
+      body {
+        display: grid;
+        grid-template-columns: 1fr 2fr 3fr;
+        grid-gap: 1em;
+        margin: var(--spacing-large);
+        color: var(--ucla-black-80);
+      }
+
+      body > * {
+        padding: 1em;
+        border-radius: 5px;
+      }
+
+      header {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        background-color: var(--ucla-lighter-blue);
+      }
+
+      aside {
+        grid-column: 1;
+        grid-row: 2 / 3;
+        background-color: var(--ucla-gold);
+    
+      }
+      article {
+        background-color: var(--ucla-black-10);
+        grid-column: 2 / 4;
+        grid-row: 2;
+      }
+
+      footer {
+        background-color: hotpink;
+        grid-column: 1 / 4;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Page Header</header>
+    <aside>Sidebar</aside>
+    <article>
+      <h1>2 columns, 3 rows</h1>
+      <p><strong>header, article, sidebar and footer</strong></p>
+      <p>
+        This example uses line-based positioning, to position the header and
+        footer, stretching them across the grid.
+      </p>
+    </article>
+    <footer>Page Footer</footer>
+  </body>
+</html>
