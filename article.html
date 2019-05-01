@@ -7,7 +7,55 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet"> 
     <link rel="stylesheet" href="css/stylesheet.css">
     <style type="text/css">
-    
+        body {
+          display: grid;
+          grid-template-areas: 
+          "header header header"
+          "nav nav nav"
+          "quote article article"
+          "footer footer footer";
+        }
+
+        header {
+          grid-area: header;
+        }
+
+        main {
+          grid-area: article;
+        }
+
+        aside {
+          grid-area: quote;
+        }
+
+        nav {
+          grid-area: nav;
+         
+        }
+
+        nav ul {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        nav li {
+          background-color: var(--ucla-gold);
+          padding: 1em;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-size: 25px;
+        }
+
+        nav li:hover {
+          background-color: var(--ucla-blue);
+        }
+
+        footer {
+          grid-area: footer;
+        }
+
+        
+
+
     </style>
   </head>
   <body class="starry-night">

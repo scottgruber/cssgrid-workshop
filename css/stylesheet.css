@@ -50,7 +50,7 @@ p {
 
 ul,
 ol {
-  list-style: none;
+  /* list-style: none; */
   margin-left: 0;
   padding-left: 0;
 }
@@ -64,12 +64,12 @@ figure {
 }
 
 .float {
-  clip-path: circle(40%);
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
   float: left;
   margin-right: var(--spacing-large);
   margin-top: -15px;
   max-width: 250px;
-  shape-outside: circle(50%);
+  shape-outside: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 }
 
 .starry-night article p:nth-of-type(2)::first-line {
